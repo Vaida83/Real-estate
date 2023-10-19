@@ -3,17 +3,46 @@ body {
     }
     
     header {
+    display: inline-block;   
     width: 1000px; 
+    margin-top: 20px;
     margin-left: calc(50% - 500px); 
     background-color: yellow;
     }
-
-    img {
+/* logo */
+    header > img {
+        margin-top: 5px;
         width: 100px;
         height: 30px;
-        background-color: red;
+        float: left;  
     }
 
-    nav {
-        
+div {
+    float: right;
+}
+    
+nav {
+float: left;
+margin-top: 10px;
+margin-right: 30px;
     }
+
+    a {
+    font-size: 20px; 
+    line-height: 20px; 
+    margin-right: 30px;
+    }
+    /*pirmam nepritaiko, bet pritaiko kitiems*/
+
+    a:last-child {
+        margin-right: 0; 
+    }
+/* user avatar */
+
+div > img {
+width: 40px;
+height: 40px;
+float: right;
+border-radius: 50%;
+}
+   
