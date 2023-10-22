@@ -61,7 +61,7 @@ border-radius: 50%;
 cursor: pointer;
 }
 
-main {
+.main {
 display: inline-block;
  width: 1000px;  
  margin-left: calc(50% - 500px); 
@@ -72,12 +72,14 @@ display: inline-block;
 width: 100%;
 min-height: 280px;
 padding: 30px;
+margin-top: 30px;
 margin-bottom: 30px;
 background-color: #36f;
-background-image: url(../img/bg.jpeg);
+background-image: url(../img/bg.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+border-radius: 20px;
 }
 
 .hero-content {
@@ -88,23 +90,29 @@ width: 30%;
     margin-bottom: 30px;
 }
 
-main > section:nth-child(2) {
+.neigbourdhood {
    width: 65%; 
    float: left;
    margin-right: 30px;
    background-color: aqua;
    padding: 30px;
 }
-main > section:nth-child(3) {
+.recomended {
 float: right;  
   width: calc(35% - 30px);
   background-color: tomato;
   padding: 30px;
+}
+.buy-rent {
+border-radius: 15px;
+}
+.search {
+    border-radius: 15px;
 }
 section > div > p {
 
 }
 
 div > div > div >p {
-    
+
 }
