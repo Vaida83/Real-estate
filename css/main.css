@@ -97,6 +97,66 @@ width: 30%;
    background-color: aqua;
    padding: 30px;
 }
+.neigbourdhood-main {
+   width: 700px; 
+   height: 300px;
+   float: left;
+   padding: 0px; 
+
+}
+.neigbourdhood1 {
+background-image: url(../img/1.jpeg);
+display: inline-block;
+border-radius: 10px;
+height: 190px;
+width: 190px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 0px;
+margin-right: 10px;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.neigbourdhood2 {
+    background-image: url(../img/2.jpg);
+    display: inline-block;
+    border-radius: 10px;
+height: 190px;
+width: 190px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 0px;
+margin-right: 10px;
+background-size: cover;
+}
+
+.neigbourdhood3 {
+    background-image: url(../img/3.jpg);
+display: inline-block;
+border-radius: 10px;
+height: 150px;
+width: 190px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 0px;
+margin-right: 10px;
+background-size: cover;
+}
+
+.see-all {
+    display: block;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: salmon;
+    border-radius: 5px;
+    color: white;
+    line-height: 30px; 
+    text-decoration: none;
+    width: 90px;
+    float: right;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
 .recomended {
 float: right;  
   width: calc(35% - 30px);
