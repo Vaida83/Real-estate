@@ -12,9 +12,9 @@ body {
     
     .main-header {
     display: inline-block;   
-    width: 1000px; 
+    width: 1200px; 
     margin-top: 20px;
-    margin-left: calc(50% - 500px);
+    margin-left: calc(50% - 600px);
 
     }
 /* logo */
@@ -63,9 +63,8 @@ cursor: pointer;
 
 .main {
 display: inline-block;
- width: 1000px;  
- margin-left: calc(50% - 500px); 
- background-color: yellow;
+ width: 1200px;  
+ margin-left: calc(50% - 600px); 
 }
 
 .hero {
@@ -90,12 +89,72 @@ width: 30%;
     margin-bottom: 30px;
 }
 
-.neigbourdhood {
+.neighborhood {
    width: 65%; 
    float: left;
    margin-right: 30px;
    background-color: aqua;
-   padding: 30px;
+}
+.neighborhood-listing {
+   width: 100%; 
+
+}
+.neighborhood-listing > .listing-item {
+    width: calc((100% - 2 * 30px) / 3);
+    margin-right: 30px;
+    margin-bottom: 20px;
+    float: left;
+    background-color: pink;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.neighborhood-listing > .listing-item.last-item {
+    margin-right: 0;
+}
+.neighborhood-listing .item-image {
+    width: 100%;
+    height: 250px;
+    object-position: center;
+    object-fit: cover;
+}
+.neighborhood-listing .item-size {
+    background-color: #889ef9;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 10px;
+    border-radius: 0 0 0 20px;
+}
+.neighborhood-listing .item-details {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+}
+.neighborhood-listing .location {
+}
+.neighborhood-listing .name {
+}
+
+}
+.see-all {
+    display: block;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: salmon;
+    border-radius: 5px;
+    color: white;
+    line-height: 30px; 
+    text-decoration: none;
+    width: 90px;
+    float: right;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 .recomended {
 float: right;  
@@ -103,16 +162,64 @@ float: right;
   background-color: tomato;
   padding: 30px;
 }
+.recomended-listing {
+width: 100%;
+padding: 10px;
+object-fit: cover;
+object-position: center;
+}
+.recomended-listing .listing-item {
+float: left;
+
+}
+.recomended-listing .item-image {
+width: 30%;
+}
+.recomended-listing .item-details {
+
+}
+.recomended-listing .item-price {    
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.recomended-listing > .location-street {
+
+} 
+.recomended-listing > .location-city {
+
+}
+.recomended-listing > .item-features {
+display: flex;
+flex-wrap: wrap;
+font-size: 14px;
+gap: 10px;
+}
+.recomended-listing > .feature {
+    display: inline-block;
+    font-size: 14px;
+}
 .buy-rent {
 border-radius: 15px;
 }
 .search {
     border-radius: 15px;
 }
-section > div > p {
 
-}
 
 div > div > div >p {
+
+}
+.recomended > .section-title {
+    width: 100%;
+margin-bottom: 30px;
+}
+
+.section-title > .title {
+width: 100%;
+margin-bottom: 20px;
+} 
+
+.section-title > .description {
 
 }
