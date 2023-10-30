@@ -13,8 +13,7 @@ body {
     .main-header {
     display: inline-block;   
     width: 1200px; 
-    margin-top: 20px;
-    margin-left: calc(50% - 600px);
+    margin: 20px calc(50% - 600px) 0;
 
     }
 /* logo */
@@ -64,7 +63,7 @@ cursor: pointer;
 .main {
 display: inline-block;
  width: 1200px;  
- margin-left: calc(50% - 600px); 
+ margin: 20px calc(50% - 600px) 40px;
 }
 
 .hero {
@@ -90,10 +89,9 @@ width: 30%;
 }
 
 .neighborhood {
-   width: 65%; 
+   width: 60%; 
    float: left;
    margin-right: 30px;
-   background-color: aqua;
 }
 .neighborhood-listing {
    width: 100%; 
@@ -158,7 +156,6 @@ width: 30%;
 .recomended {
 float: right;  
   width: calc(35% - 30px);
-  background-color: tomato;
   padding: 30px;
 }
 .recomended-listing {
@@ -166,37 +163,55 @@ width: 100%;
 padding: 10px;
 object-fit: cover;
 object-position: center;
+border-radius: 10px;
 }
 .recomended-listing .listing-item {
 float: left;
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+margin-top: 20px;
 
+
+.recomended-listing .listing-item:last-child {
+    margin-bottom: 0;
+}
 }
 .recomended-listing .item-image {
-width: 30%;
+width: 25%;
+height: 120px;
+float: left;
+margin-right: 20px;
+object-fit: cover;
+object-position: center;
+border-radius: 10px;
 }
 .recomended-listing .item-details {
-
+float: left;
+width: calc(75% - 40px);
+margin-top: 10px;
 }
 .recomended-listing .item-price {    
     font-size: 20px;
     font-weight: bold;
-
 }
-.recomended-listing > .location-street {
+.recomended-listing .location-street {
+    font-size: 18px;
 
 } 
-.recomended-listing > .location-city {
-
+.recomended-listing .location-city {
+    font-size: 16px;
 }
-.recomended-listing > .item-features {
+.recomended-listing .item-features {
 display: flex;
 flex-wrap: wrap;
 font-size: 14px;
 gap: 10px;
 }
-.recomended-listing > .feature {
+.recomended-listing .feature {
     display: inline-block;
     font-size: 14px;
+    margin-right: 10px;
 }
 .buy-rent {
 border-radius: 15px;
