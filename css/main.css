@@ -97,7 +97,7 @@ width: 30%;
    width: 100%; 
 
 }
-.neighborhood-listing > .listing-item {
+.neighborhood-listing .listing-item {
     width: calc((100% - 2 * 30px) / 3);
     margin-right: 30px;
     margin-bottom: 20px;
@@ -107,7 +107,7 @@ width: 30%;
     border-radius: 30px;
     overflow: hidden;
 }
-.neighborhood-listing > .listing-item.last-item {
+.neighborhood-listing .listing-item.last-item {
     margin-right: 0;
 }
 .neighborhood-listing .item-image {
@@ -166,11 +166,14 @@ object-position: center;
 border-radius: 10px;
 }
 .recomended-listing .listing-item {
+display: flex;
+align-items: center;
 float: left;
 width: 100%;
 padding: 10px;
 border: 1px solid #ccc;
 margin-top: 20px;
+position: relative;
 
 
 .recomended-listing .listing-item:last-child {
@@ -187,9 +190,11 @@ object-position: center;
 border-radius: 10px;
 }
 .recomended-listing .item-details {
+display: flex;
+flex-direction: column;
+gap: 10px;
 float: left;
 width: calc(75% - 40px);
-margin-top: 10px;
 }
 .recomended-listing .item-price {    
     font-size: 20px;
@@ -206,12 +211,16 @@ margin-top: 10px;
 display: flex;
 flex-wrap: wrap;
 font-size: 14px;
-gap: 10px;
+gap: 5px 15px;
 }
 .recomended-listing .feature {
-    display: inline-block;
     font-size: 14px;
-    margin-right: 10px;
+}
+.recomended-listing .bookmark {
+    background-color: red;
+    width: 20px;
+    height: 30px;
+    position: absolute;
 }
 .buy-rent {
 border-radius: 15px;
