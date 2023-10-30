@@ -83,7 +83,71 @@ border-radius: 20px;
 .hero-content {
 width: 30%;
 }
+.form {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+.form .filter {
+display: flex;
+gap: 10px;
+padding: 14px;
+border-radius: 8px;
+background-color: #fff;
+}
+.form .filter-btn {
+padding: 8px 35px;
+color: #8080FF;
+font-size: 18px;
+background-color: #fff;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+}
+.form .filter-btn:hover {
+    box-shadow: 0 2px 8px #88F8;
+   
+     }
+.form .filter-btn.active {
+   background-color: #8080FF;
+   color: #fff;
+    }
+.form .search {
+    display: flex;
+    gap: 15px;
+width: 100%;
+padding: 10px;
+background-color: #fff;
 
+}
+.form .input {
+    width: 0;
+    padding: 15px 20px;
+font-size: 20px;
+flex-grow: 1;
+border: none;
+}
+::placeholder {
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+}
+.form .search-btn {
+    padding: 10px 20px;
+    font-size: 18px; 
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #ff9376;
+    color: #fff;
+   border-radius: 8px; 
+   border: 2px solid #ff9376;
+   box-shadow: 0 4px 8px #ff937680;
+}
+.label {
+    display: none;
+}
 .main-title {
     margin-bottom: 30px;
 }
@@ -107,11 +171,19 @@ width: 30%;
     border-radius: 30px;
     overflow: hidden;
 }
-.neighborhood-listing .listing-item.last-item {
+.neighborhood-listing .listing-item .last-item {
     margin-right: 0;
+    margin-bottom: 20px;
 }
 .neighborhood-listing .item-image {
-    height: 190px;
+    width: 100%;
+    height: 250px;
+    object-position: center;
+    object-fit: cover;
+}
+.neighborhood-listing .last-item .item-image {
+    height: 130px;
+    
 }
 .neighborhood-listing .item-size {
     background-color: #889ef9;
@@ -145,6 +217,7 @@ width: 30%;
     background-color: #ff9376;
     color: #fff;
    border-radius: 8px; 
+   border: 2px solid #ff9376;
    box-shadow: 0 4px 8px #ff937680;
 }
 
@@ -232,18 +305,6 @@ display: none;
 .recomended-listing .bookmark.active:hover > .fa-bookmark-o {
 display: block;
 }
-
-{
-    display: none;
-}
-
-.buy-rent {
-border-radius: 15px;
-}
-.search {
-    border-radius: 15px;
-}
-
 
 div > div > div >p {
 

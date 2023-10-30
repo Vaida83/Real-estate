@@ -35,14 +35,17 @@
         <section class="hero">
             <div class="hero-content">
                 <h1 class="main-title">We help you find your dream home.</h1>
-                <form>
-                    <div class="buy-rent">
-                        <button type="button">Buy</button>
-                        <button type="button">Rent</button>
+                <form class="form">
+                    <div class="filter">
+                        <button class="filter-btn active" type="button">Buy</button>
+                        <button class="filter-btn" type="button">Rent</button>
                     </div>
                     <div class="search">
-                        <input type="text">
-                        <button type="submit"></button>
+                        <label class="label" for="search-address">Search for city, neigbourhood, zip...</label>
+                        <input id="search-address" class="input" type="text" placeholder="Search for city, neigbourhood, zip...">
+                        <button class="search-btn" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
                     </div>
                 </form>
             </div>
